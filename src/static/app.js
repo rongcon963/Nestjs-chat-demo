@@ -6,7 +6,7 @@ const email = document.getElementById('email');
 //get old messages from the server
 const messages = [];
 function getMessages() {
-  fetch('http://localhost:3002/api/chat')
+  fetch('http://localhost:3000/api/chat')
     .then((response) => response.json())
     .then((data) => {
       loadDate(data);

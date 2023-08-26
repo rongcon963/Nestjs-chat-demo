@@ -10,10 +10,10 @@ export class Chat {
     @PrimaryGeneratedColumn('uuid')
     id: number;
 
-    @Column()
+    @Column({ unique: true })
     email: string;
 
-    @Column({ unique: true })
+    @Column()
     text: string;
 
     @CreateDateColumn()
